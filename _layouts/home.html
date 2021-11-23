@@ -3,64 +3,112 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="post-title">Posts</h1>
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-  {{ content }}
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}
-          &nbsp;• 
-          {%- if post.categories.size > 0 -%}
-            {% for category in post.categories %}
-            {{category}}
-                {%- if forloop.last == false %}, {% endif -%}
-            {% endfor %}
-            {% else %}
-            Uncategorized
-          {%- endif -%}
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-  {%- endif -%}
+  <div class="">
+    Hello,
+    Welcome to the internet home of Manali Modi!
+  </div>
+  <div class="mt-3">
+    I am currently working as a Software Engineer at a digital product engineering firm, GlobalLogic. My work
+    mostly involves around developing Android TV and Fire TV applications.
+  </div>
 </div>
+
+
+<section class="section">
+  <div class="mt-4">
+    <h2>Education</h2>
+  </div>
+  <div class="mt-1">
+    <div class="semi-bold">
+      Bachelor of Engineering in Information Technology
+    </div>
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+      <div class="">
+        Amravati University (2016 - 2020)
+      </div>
+      <div class="">
+        CGPA 8.10 | University Rank 8
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="section">
+  <div class="mt-4">
+    <h2>Experience</h2>
+  </div>
+  <div class="mt-1">
+    <div class="semi-bold">
+      Software Engineer
+    </div>
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+      <div class="">
+        GlobalLogic - A Hitachi Group Company (Dec 2020 - Present)
+      </div>
+      <div class="">
+        Nagpur, India
+      </div>
+    </div>
+    <div class="mt-2">
+      <ul>
+        <li>
+          Developing OTT domain apps on Android TV and Fire TV platforms for Verizon FIOS using Java and Kotlin.
+        </li>
+        <li>
+          Worked on Smart Home Assistant POC where I used Python, pip, polymer web components, webpack and bash script to create IOT rule engine. Used various network protocols based on TCP like MQTT and HTTP.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mt-1">
+    <div class="semi-bold">
+      Web Development Intern
+    </div>
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+      <div class="">
+        NovelVista Solutions Pvt. Ltd. (Dec 2018 - Feb 2019)
+      </div>
+      <div class="">
+        Pune, India
+      </div>
+    </div>
+    <div class="mt-2">
+      <ul>
+        <li>
+          Developed full stack web applications using JavaScript, AJAX, Bootstrap, Java Servlets, MongoDB and Eclipse.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="section">
+  <div class="mt-4">
+    <h2>Projects</h2>
+  </div>
+  <div class="container">
+    <div class="item">
+      1
+    </div>
+    <div class="item">
+      2
+    </div>
+    <div class="item">
+      3
+    </div>
+    <div class="item">
+      4
+    </div>
+    <div class="item">
+      5
+    </div>
+    <div class="item">
+      6
+    </div>
+  </div>
+</section>
