@@ -258,8 +258,20 @@ img[src$="centerme"] { display: block; margin: 0 auto; }
 
 .align-items-center { align-items: center; }
 
-.container { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.italic { font-style: italic; }
 
-.item { padding: 3px; border: 1px dashed black; }
+.container { display: grid; grid-template-columns: 1fr; gap: 15px; }
 
-@media (min-width: 576px) { .container { grid-template-columns: 1fr 1fr 1fr; } }
+.item { padding: 10px 15px; border: 1px solid rgba(0, 0, 0, 0.5); box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1); }
+
+.item:hover { box-shadow: 4px 4px 1px 1px rgba(0, 0, 0, 0.2); }
+
+.tech { font-size: small; margin-bottom: 5px; margin-left: 4px; padding: 2px 8px; border-radius: 9999px; border: 1px solid rgba(0, 0, 0, 0.25); background-color: rgba(0, 0, 0, 0.1); }
+
+.project-title { font-size: 1.2rem; }
+
+.project-description { margin-top: 5px; margin-bottom: 15px; }
+
+.project-code { font-size: small; }
+
+@media (min-width: 576px) { .container { grid-template-columns: 1fr 1fr; } }

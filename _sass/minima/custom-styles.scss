@@ -61,21 +61,52 @@ img[src$="centerme"] {
     align-items: center;
 }
 
+.italic {
+    font-style: italic;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 15px;
 }
 
 .item {
-    padding: 3px;
-    border: 1px dashed black;
+    padding: 10px 15px;
+    border: 1px solid rgba(#000000, 50%);
+    box-shadow: 2px 2px 1px 1px rgba(#000000, 10%);
+}
+
+.item:hover {
+    box-shadow: 4px 4px 1px 1px rgba(#000000, 20%);
+}
+
+.tech {
+    font-size: small;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    border: 1px solid rgba(#000000, 25%);
+    background-color: rgba(#000000, 10%);
+}
+
+.project-title {
+    font-size: 1.2rem;
+}
+
+.project-description {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.project-code {
+    font-size: small;
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     .container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
