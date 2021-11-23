@@ -262,7 +262,7 @@ img[src$="centerme"] { display: block; margin: 0 auto; }
 
 .container { display: grid; grid-template-columns: 1fr; gap: 15px; }
 
-.item { padding: 10px 15px; border: 1px solid rgba(0, 0, 0, 0.5); box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1); }
+.item { padding: 10px 15px; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.5); box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1); }
 
 .item:hover { box-shadow: 4px 4px 1px 1px rgba(0, 0, 0, 0.2); }
 
